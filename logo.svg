@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-310 -310 620 620" width="512" height="512">
+  <title>Clover Systems</title>
+  <g fill="#1b5a25">
+    <path id="p" d="M-14,-12 C-40,-70 -72,-120 -72,-165 C-72,-225 -38,-270 0,-306 C38,-270 72,-225 72,-165 C72,-120 40,-70 14,-12 Z"/>
+    <use href="#p" transform="rotate(90)"/>
+    <use href="#p" transform="rotate(180)"/>
+    <use href="#p" transform="rotate(270)"/>
+  </g>
+</svg>

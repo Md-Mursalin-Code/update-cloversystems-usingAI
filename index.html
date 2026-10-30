@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clover Systems | Bangladesh Drone Defence</title>
+<meta name="description" content="Clover Systems – Bangladesh-based drone defence company building surveillance and interceptor drones.">
+<link rel="icon" href="logo.svg" type="image/svg+xml">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="js/tw-config.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"}}</script>
+<script type="module" src="js/drone-viewer.js"></script>
+</head>
+<body class="antialiased">
+<div id="site-header"></div>
+
+<!-- HERO -->
+<section class="relative min-h-screen flex items-center overflow-hidden grid-bg">
+  <canvas id="particles" class="absolute inset-0 w-full h-full"></canvas>
+  <div class="absolute inset-0 bg-gradient-to-b from-ink/30 via-transparent to-ink"></div>
+  <div class="relative max-w-7xl mx-auto px-5 pt-28 pb-16 grid lg:grid-cols-2 gap-8 items-center w-full">
+    <div>
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full glass text-xs uppercase tracking-[.25em] text-clover-400 mb-6">
+        <span class="w-2 h-2 rounded-full bg-clover-400 animate-pulse"></span> Proudly Made in Bangladesh
+      </div>
+      <h1 class="font-display text-5xl md:text-7xl font-bold text-white leading-[1.05]">
+        Sovereign Skies.<br>
+        <span class="text-clover-400" id="typed" data-words='["Eyes Above.","Defence Within.","Made in Bangladesh."]'></span><span class="cursor">&nbsp;</span>
+      </h1>
+      <p class="mt-6 text-lg text-gray-400 max-w-xl">Clover Systems designs and builds man-portable surveillance and interceptor drones — giving defence forces eyes in the sky and a decisive edge against modern aerial and ground threats.</p>
+      <div class="mt-9 flex flex-wrap gap-4">
+        <a href="fleet.html" class="px-7 py-3 rounded bg-clover-500 text-ink font-semibold hover:bg-clover-400 hover:-translate-y-0.5 transition">Explore the Fleet</a>
+        <a href="contact.html" class="px-7 py-3 rounded border border-clover-500/60 text-clover-400 hover:bg-clover-500/10 transition">Request a Briefing</a>
+      </div>
+    </div>
+    <div class="relative h-[420px] md:h-[580px]">
+      <div class="absolute inset-0 bg-clover-500/10 blur-3xl rounded-full"></div>
+      <div class="drone-viewer" data-model="shyena" data-ui="hint" data-photo="images/shyena-s16.jpg"></div>
+      <a href="shyena-s16.html" class="absolute bottom-2 right-2 glass rounded px-4 py-2 text-xs uppercase tracking-widest text-clover-400 hover:bg-clover-500/10">SHYENA-S16 →</a>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="border-y border-clover-500/15 bg-panel">
+  <div class="max-w-7xl mx-auto px-5 py-12 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+    <div><div class="font-display text-5xl font-bold text-white"><span class="count" data-to="3">0</span></div><div class="text-xs uppercase tracking-widest text-gray-500 mt-1">Drone Platforms</div></div>
+    <div><div class="font-display text-5xl font-bold text-white"><span class="count" data-to="45">0</span>+</div><div class="text-xs uppercase tracking-widest text-gray-500 mt-1">Minutes Max Endurance</div></div>
+    <div><div class="font-display text-5xl font-bold text-white"><span class="count" data-to="25">0</span> km</div><div class="text-xs uppercase tracking-widest text-gray-500 mt-1">Max Surveillance Range</div></div>
+    <div><div class="font-display text-5xl font-bold text-white"><span class="count" data-to="4">0</span>K</div><div class="text-xs uppercase tracking-widest text-gray-500 mt-1">Surveillance Imaging</div></div>
+  </div>
+</section>
+
+<!-- FLEET TEASER -->
+<section class="max-w-7xl mx-auto px-5 pt-24">
+  <div class="text-center mb-12 reveal">
+    <p class="text-clover-400 uppercase tracking-[.3em] text-xs mb-3">Our fleet</p>
+    <h2 class="font-display text-4xl md:text-5xl font-bold text-white">Three platforms. One mission.</h2>
+    <p class="text-gray-500 mt-3 text-sm">Drag any drone to spin it 360°.</p>
+  </div>
+  <div id="fleet-cards" class="grid md:grid-cols-3 gap-6"></div>
+  <div class="text-center mt-10 reveal"><a href="fleet.html" class="inline-block px-7 py-3 rounded border border-clover-500/60 text-clover-400 hover:bg-clover-500/10 transition">Compare all platforms →</a></div>
+</section>
+
+<!-- WHY -->
+<section class="max-w-7xl mx-auto px-5 pt-24">
+  <div class="text-center mb-12 reveal">
+    <p class="text-clover-400 uppercase tracking-[.3em] text-xs mb-3">Why Clover</p>
+    <h2 class="font-display text-4xl md:text-5xl font-bold text-white">Built for the field</h2>
+  </div>
+  <div class="grid md:grid-cols-3 gap-6">
+    <div class="reveal glass rounded-xl p-8 card-glow"><div class="font-display text-5xl text-clover-400 mb-3">01</div><h3 class="font-display text-2xl text-white mb-2">Rapid Deployment</h3><p class="text-gray-400 text-sm">Man-portable designs let small teams launch in minutes, anywhere.</p></div>
+    <div class="reveal glass rounded-xl p-8 card-glow" style="transition-delay:.1s"><div class="font-display text-5xl text-clover-400 mb-3">02</div><h3 class="font-display text-2xl text-white mb-2">Mission Flexibility</h3><p class="text-gray-400 text-sm">A layered fleet covering reconnaissance, payload carriage and counter-threat missions.</p></div>
+    <div class="reveal glass rounded-xl p-8 card-glow" style="transition-delay:.2s"><div class="font-display text-5xl text-clover-400 mb-3">03</div><h3 class="font-display text-2xl text-white mb-2">Local Support</h3><p class="text-gray-400 text-sm">Engineering, training and maintenance delivered in-country by our own team.</p></div>
+  </div>
+</section>
+
+<div id="site-cta"></div>
+<div id="site-footer"></div>
+
+<script src="js/drones-data.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Clover Systems</title>
+<meta name="description" content="Contact Clover Systems to request a briefing.">
+<link rel="icon" href="logo.svg" type="image/svg+xml">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="js/tw-config.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body class="antialiased">
+<div id="site-header"></div>
+
+<section class="relative pt-40 pb-12 grid-bg overflow-hidden">
+  <canvas id="particles" class="absolute inset-0 w-full h-full"></canvas>
+  <div class="absolute inset-0 bg-gradient-to-b from-transparent to-ink"></div>
+  <div class="relative max-w-4xl mx-auto px-5 text-center">
+    <p class="text-clover-400 uppercase tracking-[.3em] text-xs mb-3">Get in touch</p>
+    <h1 class="font-display text-5xl md:text-7xl font-bold text-white">Request a briefing</h1>
+    <p class="text-gray-400 mt-6 text-lg">Authorised government and defence organisations are welcome to contact our team.</p>
+  </div>
+</section>
+
+<section class="max-w-6xl mx-auto px-5 py-12 grid lg:grid-cols-3 gap-8">
+  <div class="space-y-5 reveal">
+    <div class="glass rounded-xl p-6"><div class="text-xs uppercase tracking-widest text-clover-400 mb-1">Email</div><div class="text-white">your-email@example.com</div></div>
+    <div class="glass rounded-xl p-6"><div class="text-xs uppercase tracking-widest text-clover-400 mb-1">Phone</div><div class="text-white">+880 0000 000000</div></div>
+    <div class="glass rounded-xl p-6"><div class="text-xs uppercase tracking-widest text-clover-400 mb-1">Location</div><div class="text-white">Bangladesh</div></div>
+  </div>
+  <form id="form" class="reveal lg:col-span-2 glass rounded-2xl p-8 grid md:grid-cols-2 gap-5">
+    <input required placeholder="Full name" class="bg-ink/70 border border-white/10 rounded px-4 py-3 focus:outline-none focus:border-clover-400">
+    <input required type="email" placeholder="Official email" class="bg-ink/70 border border-white/10 rounded px-4 py-3 focus:outline-none focus:border-clover-400">
+    <input placeholder="Organisation" class="bg-ink/70 border border-white/10 rounded px-4 py-3 focus:outline-none focus:border-clover-400">
+    <select id="drone-select" class="bg-ink/70 border border-white/10 rounded px-4 py-3 focus:outline-none focus:border-clover-400">
+      <option>Interested in: All platforms</option><option>SHYENA-S16</option><option>BAJRA-I</option><option>CHOKH-C5</option>
+    </select>
+    <textarea rows="5" placeholder="Your requirements" class="md:col-span-2 bg-ink/70 border border-white/10 rounded px-4 py-3 focus:outline-none focus:border-clover-400"></textarea>
+    <button class="md:col-span-2 py-3 rounded bg-clover-500 text-ink font-semibold hover:bg-clover-400 transition">Send Request</button>
+    <p id="ok" class="md:col-span-2 text-center text-clover-400 hidden">✓ Thank you. Our team will contact you shortly.</p>
+  </form>
+</section>
+
+<div id="site-footer"></div>
+<script src="js/drones-data.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>
